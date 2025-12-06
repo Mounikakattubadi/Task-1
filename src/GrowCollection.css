@@ -1,312 +1,313 @@
 /* ===========================
-   GROW YOUR COLLECTION
+   BASE SECTION
 =========================== */
 
 .grow-section {
-  background: #fbf5e5;
   position: relative;
+  padding: 5rem 0 8rem;
+  background: #fcf4e3;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
 }
 
-/* top cream area */
+/* content wrapper on top of background */
+.grow-container {
+  position: relative;
+  z-index: 1;
+  max-width: 70rem; /* ~1120px */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===========================
+   BACKGROUND FLOWS (PNG)
+=========================== */
+
+.grow-bg-flow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16rem;         /* waves start below sidebar */
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* each wave image */
+.flow-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: none;
+}
+
+/* order + small offsets to stack correctly */
+.flow-yellow {
+  z-index: 1;
+  transform: translateY(1.5rem);
+}
+
+.flow-lightyellow {
+  z-index: 2;
+  transform: translate(0.6rem, 0.5rem);
+}
+
+.flow-brown {
+  z-index: 3;
+  transform: translate(-0.3rem, -0.25rem);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.grow-header {
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
 
 .grow-header h2 {
-  font-size: 45px;
+  font-size: 2.75rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   color: #111827;
 }
 
 .grow-header p {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: #4b5563;
-  max-width: 75%;
 }
+
+/* ===========================
+   MAIN GRID
+=========================== */
 
 .grow-main {
-  margin-top: 32px;
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 16rem minmax(0, 1fr);
+  gap: 3.75rem;
+  align-items: flex-start;
+  margin-bottom: 12%;
 }
 
-/* sidebar */
+/* ===========================
+   SIDEBAR
+=========================== */
 
 .grow-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0.9rem;
 }
 
-.grow-option {
+/* search pill */
+
+.grow-search-pill {
   display: flex;
   align-items: center;
-  gap: 10px;
-  text-align: left;
-  padding: 8px 12px;
-  border-radius: 5%;
-  border: 2px solid transparent;
-  background: transparent;
-  font-size: 14px;
-  color: #4b5563;
+  gap: 0.6rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 0.06rem solid #e5e7eb;
+  font-size: 0.9rem;
+  color: #111827;
+  box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.08);
   cursor: pointer;
 }
 
-.grow-option .grow-icon {
-  font-size: 14px;
+.grow-search-icon {
+  font-size: 1rem;
 }
 
-.grow-option.active {
+/* list items */
+
+.grow-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.9rem;
+  border: 0.06rem solid transparent;
+  background: transparent;
+  color: #4b5563;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.grow-item-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grow-item-icon svg {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.grow-item:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.grow-item.active {
   background: #ffffff;
-  border-color: #8a4b14;
+  border-color: #f97316;
   color: #111827;
+  box-shadow: 0 0.75rem 2rem rgba(248, 150, 46, 0.25);
 }
 
-/* right visual area */
+/* ===========================
+   RIGHT VISUAL
+=========================== */
 
 .grow-visual {
   position: relative;
-  height: 260px;
+  height: 21rem; /* space for the two big windows */
 }
 
-/* main windows */
+/* windows */
 
-.grow-window {
+.window {
   position: absolute;
-  border-radius: 20px;
+  border-radius: 1rem;
   overflow: hidden;
-  background: #000;
-  box-shadow: 0 22px 40px rgba(15, 23, 42, 0.3);
+  background: #ffffff;
+  box-shadow: 0 1.5rem 2.75rem rgba(15, 23, 42, 0.35);
+  border: 0.25rem solid #ffffff;
 }
 
-.grow-window img {
+/* back window relative to .grow-visual */
+.window-back {
+  width: 78%;
+  height: 95%;
+  left: 4%;
+  top: 4%;
+}
+
+/* front window slightly bigger and lower */
+.window-front {
+  width: 78%;
+  height: 125%;
+  left: 18%;
+  top: 24%;
+}
+
+/* window bar with dots */
+
+.window-bar {
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 0.75rem;
+  background: #f9fafb;
+  border-bottom: 0.06rem solid #e5e7eb;
+}
+
+.dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+}
+
+.dot-red {
+  background: #ef4444;
+}
+
+.dot-yellow {
+  background: #facc15;
+}
+
+.dot-green {
+  background: #22c55e;
+}
+
+/* images inside windows */
+
+.window img {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 1.9rem);
   object-fit: cover;
 }
 
-/* back window */
+/* small overlay image – positioned with % so it never goes outside */
 
-.grow-window-back {
-  width: 340px;
-  height: 190px;
-  left: 70px;
-  top: 0;
-  opacity: 0.9;
-}
-
-/* front window */
-
-.grow-window-front {
-  width: 380px;
-  height: 210px;
-  left: 120px;
-  top: 40px;
-}
-
-/* little card on right */
-
-.grow-window-small {
+.window-small {
   position: absolute;
-  right: 10px;
-  bottom: -10px;
-  width: 140px;
-  height: 110px;
-  border-radius: 16px;
+  right: 4%;        /* keep some space from the right edge */
+  bottom: 18%;      /* move up relative to window height */
+  width: 32%;       /* relative to front window width */
+  height: 60%;      /* relative to front window height */
+  border-radius: 1rem;
+  background: #ffffff;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 1.25rem 2.6rem rgba(0, 0, 0, 0.45);
 }
 
-.grow-window-small img {
+.window-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* ===========================
-   BOTTOM BROWN MAP AREA
+   RESPONSIVE
 =========================== */
 
-.grow-bottom {
-  margin-top: 80px;
-  position: relative;
-  color: #ffffff;
-}
-
-/* wave at top like figma */
-
-.grow-bottom::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 0;
-  right: 0;
-  height: 120px;
-  background: #fbf5e5;
-  border-bottom-left-radius: 50% 100%;
-  border-bottom-right-radius: 50% 100%;
-  z-index: 0;
-}
-
-/* brown block */
-
-.grow-map-area {
-  position: relative;
-  background: #7a3d0a;
-  border-radius: 0;
-  padding: 80px 30px 70px;
-  overflow: hidden;
-}
-
-/* optional yellow wave inside */
-
-.grow-map-area::before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  left: -10%;
-  width: 120%;
-  height: 120px;
-  background: #f1ca75;
-  border-bottom-left-radius: 50% 100%;
-  border-bottom-right-radius: 50% 100%;
-  opacity: 0.7;
-}
-
-/* floating shoe card */
-
-.grow-floating-card {
-  position: absolute;
-  left: 40px;
-  top: 40px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #ffffff;
-  color: #111827;
-  border-radius: 16px;
-  padding: 10px 12px;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4);
-  z-index: 2;
-}
-
-.grow-floating-image {
-  width: 70px;
-  height: 70px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.grow-floating-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.grow-floating-text p {
-  font-size: 12px;
-  margin: 0;
-}
-
-/* world map dots (fake map) */
-
-.grow-map-dots {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  margin-top: 40px;
-}
-
-.grow-dot {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 999px;
-  background: rgba(255, 255, 0, 0.3);
-  box-shadow: 0 0 0 6px rgba(255, 255, 0, 0.12);
-}
-
-/* approximate positions like a world map */
-
-.dot-1 {
-  left: 18%;
-  top: 40%;
-}
-
-.dot-2 {
-  left: 40%;
-  top: 32%;
-}
-
-.dot-3 {
-  left: 55%;
-  top: 55%;
-}
-
-.dot-4 {
-  right: 24%;
-  top: 38%;
-}
-
-.dot-5 {
-  right: 18%;
-  top: 65%;
-}
-
-/* stats text in center */
-
-.grow-stat {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  text-align: center;
-}
-
-.grow-stat-number {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.grow-stat-label {
-  font-size: 16px;
-}
-
-/* responsive */
-
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) { /* 900px */
   .grow-main {
     grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 
   .grow-visual {
-    height: 260px;
-    margin-top: 12px;
+    height: 20rem;
   }
 
-  .grow-window-back {
+  .window-back {
+    left: 4%;
+  }
+
+  .window-front {
     left: 10%;
   }
 
-  .grow-window-front {
-    left: 16%;
+  .grow-bg-flow {
+    top: 18rem;
+  }
+}
+
+@media (max-width: 40rem) { /* 640px */
+  .grow-header h2 {
+    font-size: 2rem;
   }
 
-  .grow-floating-card {
-    position: relative;
+  .window-back {
+left: -10%;
+    width: 100%;
+  }
+
+  .window-front {
     left: 0;
-    top: 0;
-    margin-bottom: 16px;
+    width: 100%;
   }
 
-  .grow-map-area {
-    padding-top: 40px;
+  .window-small {
+    right: 0%;
+    bottom: 14%;
+    width: 40%;
+    height: 55%;
   }
 
-  .grow-stat {
-    transform: translate(-50%, -10%);
+  .grow-bg-flow {
+    top: 20rem;
   }
 }

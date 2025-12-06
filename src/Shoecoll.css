@@ -1,0 +1,225 @@
+/* ===========================
+   BASE SECTION
+=========================== */
+
+.shoe-coll-section {
+position: relative;
+  background: #78350f;
+  color: #ffffff;
+  padding: 14rem 0;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+ margin-top: -2%;
+
+}
+
+/* background map image */
+
+.shoe-coll-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shoe-map-img {
+  width: 100%;
+  max-width: 72rem;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* foreground layout */
+
+.shoe-coll-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-height: 22rem;
+}
+
+/* ===========================
+   FLOATING CARD
+=========================== */
+
+.shoe-floating-card {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 14rem;
+  border-radius: 0.9rem;
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoe-card-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.shoe-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shoe-card-text {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.6rem 0.6rem;
+  line-height: 1.4;
+}
+
+.shoe-card-name {
+  font-weight: 600;
+}
+
+/* ===========================
+   CENTER STATS
+=========================== */
+
+.shoe-stat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+}
+
+.shoe-stat-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.shoe-stat-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* ===========================
+   MAP DOTS
+=========================== */
+
+.shoe-dots {
+  position: absolute;
+  inset: 0;
+  max-width: 72rem;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.shoe-dot {
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  background: #b5ff3b;
+  box-shadow: 0 0 0 0.35rem rgba(181, 255, 59, 0.25);
+}
+
+/* tweak these percentages to match your map image */
+
+.dot-1 {
+  left: 21%;
+  top: 30%;
+}
+
+.dot-2 {
+  left: 35%;
+  top: 47%;
+}
+
+.dot-3 {
+  left: 46%;
+  top: 72%;
+}
+
+.dot-4 {
+  left: 64%;
+  top: 40%;
+}
+
+.dot-5 {
+  left: 73%;
+  top: 62%;
+}
+
+.dot-6 {
+  left: 15%;
+  top: 68%;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 48rem) {
+  .shoe-coll-inner {
+    min-height: 20rem;
+  }
+
+  .shoe-floating-card {
+    top: 1rem;
+    left: 1rem;
+    width: 12rem;
+  }
+
+  .shoe-stat-number {
+    font-size: 2.2rem;
+  }
+
+  .shoe-stat-label {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .shoe-floating-card {
+    position: static;
+    margin-bottom: 1.5rem;
+  }
+
+  .shoe-stat {
+    position: static;
+    transform: none;
+    margin-top: 2rem;
+  }
+
+  .dot-1 {
+  display: none;
+}
+
+.dot-2 {
+display: none;
+}
+
+.dot-3 {
+ display: none;
+}
+
+.dot-4 {
+display: none;
+}
+
+.dot-5 {
+  left: 73%;
+  top: 62%;
+}
+
+.dot-6 {
+  left: 15%;
+  top: 68%;
+}
+ 
+}

@@ -1,15 +1,37 @@
 import React from "react";
 import "./GrowCollection.css";
 
-import grow1 from "./images/grow1.jpg";
-import grow2 from "./images/grow2.jpg";
-import grow3 from "./images/grow3.jpg";
-import grow4 from "./images/grow4.jpg";
+import growBack from "./images/grow1.jpg";
+import growMain from "./images/grow2.jpg";
+import growSmall from "./images/grow3.jpg";
+
+// wave background images
+import brown from "./images/brown.png";
+import lightyellow from "./images/lightyellow.png";
+import yellow from "./images/yellow.png";
+
+// icons from react-icons
+import {
+  FiSearch,
+  FiTarget,
+  FiMessageCircle,
+  FiStar,
+  FiCheck,
+} from "react-icons/fi";
 
 const GrowCollection = () => {
   return (
-    <section className="grow-section" id="solutions">
-      <div className="grow-top container">
+    <section className="grow-section">
+      {/* BACKGROUND FLOWS (BEHIND EVERYTHING) */}
+      <div className="grow-bg-flow">
+        <img src={yellow} alt="" className="flow-img flow-yellow" />
+        <img src={lightyellow} alt="" className="flow-img flow-lightyellow" />
+        <img src={brown} alt="" className="flow-img flow-brown" />
+      </div>
+
+      {/* FOREGROUND CONTENT */}
+      <div className="grow-container">
+        {/* HEADER */}
         <div className="grow-header">
           <h2>Grow your collection</h2>
           <p>
@@ -20,72 +42,73 @@ const GrowCollection = () => {
         </div>
 
         <div className="grow-main">
-          {/* left sidebar */}
+          {/* LEFT SIDEBAR */}
           <aside className="grow-sidebar">
-            <button className="grow-option active">
-              <span className="grow-icon">☰</span>
-              Discover value
+            <button className="grow-search-pill">
+              <FiSearch className="grow-search-icon" />
+              <span>Bibendum tellus</span>
             </button>
-            <button className="grow-option">
-              <span className="grow-icon">📦</span>
-              Grow asset
+
+            <button className="grow-item active">
+              <span className="grow-item-icon">
+                <FiTarget />
+              </span>
+              Cras eget
             </button>
-            <button className="grow-option">
-              <span className="grow-icon">💬</span>
+
+            <button className="grow-item">
+              <span className="grow-item-icon">
+                <FiMessageCircle />
+              </span>
               Dolor pharetra
             </button>
-            <button className="grow-option">
-              <span className="grow-icon">⭐</span>
-              Arnet fringilla
+
+            <button className="grow-item">
+              <span className="grow-item-icon">
+                <FiStar />
+              </span>
+              Amet, fringilla
             </button>
-            <button className="grow-option">
-              <span className="grow-icon">✔</span>
+
+            <button className="grow-item">
+              <span className="grow-item-icon">
+                <FiTarget />
+              </span>
+              Amet nibh
+            </button>
+
+            <button className="grow-item">
+              <span className="grow-item-icon">
+                <FiCheck />
+              </span>
               Sed velit
             </button>
           </aside>
 
-          {/* right layered windows */}
+          {/* RIGHT VISUAL AREA */}
           <div className="grow-visual">
-            <div className="grow-window grow-window-back">
-              <img src={grow1} alt="Collection background" />
-            </div>
-
-            <div className="grow-window grow-window-front">
-              <img src={grow2} alt="Collection main" />
-
-              <div className="grow-window-small">
-                <img src={grow3} alt="Detail" />
+            {/* back window */}
+            <div className="window window-back">
+              <div className="window-bar">
+                <span className="dot dot-red" />
+                <span className="dot dot-yellow" />
+                <span className="dot dot-green" />
               </div>
+              <img src={growBack} alt="Background sneakers" />
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* brown stats / map part */}
-      <div className="grow-bottom">
-        <div className="grow-bottom-inner container">
-          <div className="grow-map-area">
-            <div className="grow-floating-card">
-              <div className="grow-floating-image">
-                <img src={grow4} alt="Sneaker closeup" />
+            {/* front window */}
+            <div className="window window-front">
+              <div className="window-bar">
+                <span className="dot dot-red" />
+                <span className="dot dot-yellow" />
+                <span className="dot dot-green" />
               </div>
-              <div className="grow-floating-text">
-                <p>Curate sneakers around the world.</p>
+              <img src={growMain} alt="Main sneakers" />
+
+              <div className="window-small">
+                <img src={growSmall} alt="Sneaker detail" />
               </div>
-            </div>
-
-            {/* fake world map w/ dots */}
-            <div className="grow-map-dots">
-              <span className="grow-dot dot-1" />
-              <span className="grow-dot dot-2" />
-              <span className="grow-dot dot-3" />
-              <span className="grow-dot dot-4" />
-              <span className="grow-dot dot-5" />
-            </div>
-
-            <div className="grow-stat">
-              <p className="grow-stat-number">11,658,467</p>
-              <p className="grow-stat-label">Shoes Collected</p>
             </div>
           </div>
         </div>

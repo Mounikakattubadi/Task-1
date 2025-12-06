@@ -79,6 +79,7 @@
   position: relative;
   width: 55%;
   height: 230px;
+  margin-left: 22%;
 }
 
 /* background shapes */
@@ -102,25 +103,25 @@
 /* magenta rounded rectangle on right */
 
 .why-pink {
-  width: 130px;
-  height: 130px;
+width: 180px;
+  height: 180px;
   background: #e14286;
-  right: 83px;
-  bottom: -20px;
+  right: -71px;
+  bottom: -65px;
   border-radius: 40px;
   z-index: 0;
-  opacity: 80%;
+  opacity: 75%;
 }
 
 /* blue dot top-right of video */
 
 .why-blue-dot {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   background: #1d9edb;
   border-radius: 999px;
-  right: 140px;
-  top: -54px;
+  right: 31px;
+  top: -51px;
   z-index: 2;
   opacity: 70%;
 }
@@ -128,12 +129,12 @@
 /* green dot bottom-left of video */
 
 .why-green-dot {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   background: #28a745;
   border-radius: 999px;
   left: 120px;
-  bottom: 8px;
+  bottom: 3px;
   z-index: 2;
   opacity: 50%;
 }

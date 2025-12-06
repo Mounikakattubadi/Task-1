@@ -131,30 +131,40 @@
 
 .hero-feature-icon.blue {
   width: 64px;
-  height: 44px;
+  height: 46px;
   background: #8fbcd0;
-  clip-path: polygon(50% 100%, 100% 40%, 85% 5%, 15% 5%, 0 40%);
+  clip-path: polygon(51.13% 104.91%, 96.88% 39%, 97.88% -0.63%, -3.44% 3.55%, 2px 48%);
   border-radius: 20px;
   filter: blur(0.4px);   /* softens edges like Figma */
 }
 
+
 .hero-feature-icon.green {
-  width: 52px;
-  height: 70px;
+  width: 64px;
+  height: 44px;
   background: #97d5a3;
 
-  /* This recreates the angled-round blob */
-  border-radius: 45% 60% 55% 40% / 55% 65% 45% 40%;
+  /* Left-bent organic blob */
+  clip-path: polygon(
+  60% 105%,   /* bottom shifted right → blob leans left */
+  100% 40%,   /* top-right stays similar */
+  98% 0%,     /* upper-right */
+  -20% 10%,   /* strong left bend (~60%) */
+  10% 50%     /* mid-left pulled inward */
+);
 
-  transform: rotate(-35deg); /* perfect angle from your image */
+
+  border-radius: 30px;   /* soften polygon edges */
+  filter: blur(0.4px);   /* match the soft Figma look */
 }
+
 
 
 .hero-feature-icon.purple {
   width: 40px;
   height: 40px;
   background: #d48bd6;
-  border-radius: 35%;
+  border-radius: 42%;
 }
 
 

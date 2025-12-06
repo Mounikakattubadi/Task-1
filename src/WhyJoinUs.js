@@ -6,39 +6,47 @@ import they1 from "./images/they1.jpg";
 import they2 from "./images/they2.jpg";
 import they3 from "./images/they3.jpg";
 import they4 from "./images/they4.jpg";
+import vector1 from "./images/vector1.png"
+import vector2 from "./images/vector2.png"
+import vector3 from "./images/vector3.png"
+import vector4 from "./images/vector4.png"
 
 const testimonials = [
   {
     id: 1,
-    logo: they1,
+    logo: vector1,
     company: "Zoomerr",
     text: "Non risus viverra enim, quis. Eget vitae auctor velit posuere habitasse.",
     name: "Helen Jummy",
     role: "Co-founder",
+    image:they1,
   },
   {
     id: 2,
-    logo: they2,
+    logo: vector2,
     company: "SHELLS",
     text: "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim.",
     name: "Hellen Jummy",
     role: "Co-founder",
+    image:they2,
   },
   {
     id: 3,
-    logo: they3,
+    logo: vector3,
     company: "ArtVenue",
     text: "A eget sed posuere dui risus habitant commodo, turpis lorem tristique.",
     name: "David Oholo",
     role: "Product Designer",
+    image:they3,
   },
   {
     id: 4,
-    logo: they4,
+    logo: vector4,
     company: "Waveon",
     text: "Sed dui sed aliquet scelerisque in habitasse eu, tortor lorem.",
     name: "Megan Co.",
     role: "VP Marketing",
+    image:they4,
   },
 ];
 
@@ -104,7 +112,7 @@ const WhyJoinUs = () => {
                 <div className="love-person">
                   <div className="love-avatar">
                     <img
-                      src={item.logo}
+                      src={item.image}
                       alt={item.name}
                       className="love-avatar-img"
                     />

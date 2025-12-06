@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       {/* FEATURES ROW */}
-      <div className="hero-features container">
+      <div className="hero-features container" style={{marginTop:"8%"}}>
         <div className="hero-feature">
           <div className="hero-feature-icon blue" />
           <h3>Nibh viverra</h3>

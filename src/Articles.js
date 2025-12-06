@@ -10,6 +10,8 @@ import art6 from "./images/art6.jpg";
 import art7 from "./images/art7.jpg";
 import art8 from "./images/art8.jpg";
 
+import vector13 from "./images/Vector 13.png"; // background vector for Amazing events
+
 const articleCards = [
   {
     id: 1,
@@ -94,9 +96,14 @@ const Articles = () => {
         </div>
       </div>
 
-      {/* EVENTS BLOCK (yellow background) */}
+      {/* EVENTS BLOCK (yellow background with vector13 underneath cards) */}
       <div className="events-block">
-        <div className="container">
+        {/* background vector under cards */}
+        <div className="events-bg">
+          <img src={vector13} alt="" />
+        </div>
+
+        <div className="container events-container">
           <div className="events-header-row">
             <h2>Amazing events</h2>
             <button className="articles-link-btn">Explore Articles →</button>

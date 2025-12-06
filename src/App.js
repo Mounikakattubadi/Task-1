@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import BestOfBest from "./BestOfBest";
 import WhyJoinUs from "./WhyJoinUs";
 import GrowCollection from "./GrowCollection";
+import Shoecoll from "./Shoecoll";
 import Articles from "./Articles";
 import Footer from "./Footer";
 
@@ -15,6 +16,7 @@ const App = () => {
       <BestOfBest />
       <WhyJoinUs />
       <GrowCollection />
+      <Shoecoll/>
       <Articles />
       <Footer />
     </div>

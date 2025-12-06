@@ -9,6 +9,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { SiGoogleplay } from "react-icons/si";
+
 
 const Footer = () => {
   return (
@@ -60,8 +62,9 @@ const Footer = () => {
             {/* Google Play badge */}
             <button className="store-badge-icon">
               <span className="store-badge-logo">
-                <FaGooglePlay />
+                <SiGoogleplay />
               </span>
+
               <span className="store-badge-text">
                 <span className="store-badge-small">GET IT ON</span>
                 <span className="store-badge-big">Google Play</span>
