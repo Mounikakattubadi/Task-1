@@ -5,12 +5,12 @@ import growBack from "./images/grow1.jpg";
 import growMain from "./images/grow2.jpg";
 import growSmall from "./images/grow3.jpg";
 
-// wave background images
+
 import brown from "./images/brown.png";
 import lightyellow from "./images/lightyellow.png";
 import yellow from "./images/yellow.png";
 
-// icons from react-icons
+
 import {
   FiSearch,
   FiTarget,
@@ -22,16 +22,16 @@ import {
 const GrowCollection = () => {
   return (
     <section className="grow-section">
-      {/* BACKGROUND FLOWS (BEHIND EVERYTHING) */}
+      
       <div className="grow-bg-flow">
         <img src={yellow} alt="" className="flow-img flow-yellow" />
         <img src={lightyellow} alt="" className="flow-img flow-lightyellow" />
         <img src={brown} alt="" className="flow-img flow-brown" />
       </div>
 
-      {/* FOREGROUND CONTENT */}
+      
       <div className="grow-container">
-        {/* HEADER */}
+       
         <div className="grow-header">
           <h2>Grow your collection</h2>
           <p>
@@ -42,7 +42,7 @@ const GrowCollection = () => {
         </div>
 
         <div className="grow-main">
-          {/* LEFT SIDEBAR */}
+          
           <aside className="grow-sidebar">
             <button className="grow-search-pill">
               <FiSearch className="grow-search-icon" />
@@ -85,9 +85,9 @@ const GrowCollection = () => {
             </button>
           </aside>
 
-          {/* RIGHT VISUAL AREA */}
+          
           <div className="grow-visual">
-            {/* back window */}
+            
             <div className="window window-back">
               <div className="window-bar">
                 <span className="dot dot-red" />
@@ -97,7 +97,7 @@ const GrowCollection = () => {
               <img src={growBack} alt="Background sneakers" />
             </div>
 
-            {/* front window */}
+            
             <div className="window window-front">
               <div className="window-bar">
                 <span className="dot dot-red" />

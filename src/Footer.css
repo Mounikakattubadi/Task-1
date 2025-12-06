@@ -1,9 +1,6 @@
-/* ===========================
-   FOOTER
-=========================== */
 
 .footer-section {
-  background: #020922;
+  background: #262b36;
   color: #e5e7eb;
   padding: 40px 0 26px;
   font-size: 13px;
@@ -35,13 +32,13 @@
   color: #e5e7eb;
 }
 
-/* RIGHT COLUMN */
+
 
 .footer-col-right {
   text-align: left;
 }
 
-/* ====== APP STORE / GOOGLE PLAY BADGES ====== */
+
 
 .store-badge-icon {
   width: 190px;
@@ -83,7 +80,7 @@
   font-weight: 500;
 }
 
-/* ====== SOCIAL ICONS ====== */
+
 
 .footer-subtitle {
   margin: 16px 0 8px;
@@ -103,7 +100,6 @@
   color: #f9fafb;
 }
 
-/* ====== BOTTOM BAR ====== */
 
 .footer-bottom {
   border-top: 1px solid #111827;
@@ -129,7 +125,7 @@
   color: #e5e7eb;
 }
 
-/* responsive */
+
 
 @media (max-width: 900px) {
   .footer-columns {

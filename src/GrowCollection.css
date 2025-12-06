@@ -1,6 +1,3 @@
-/* ===========================
-   BASE SECTION
-=========================== */
 
 .grow-section {
   position: relative;
@@ -11,30 +8,28 @@
     "Segoe UI", sans-serif;
 }
 
-/* content wrapper on top of background */
+
 .grow-container {
   position: relative;
   z-index: 1;
-  max-width: 70rem; /* ~1120px */
+  max-width: 70rem; 
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* ===========================
-   BACKGROUND FLOWS (PNG)
-=========================== */
+
 
 .grow-bg-flow {
   position: absolute;
   left: 0;
   right: 0;
-  top: 16rem;         /* waves start below sidebar */
+  top: 16rem;        
   bottom: 0;
   pointer-events: none;
   z-index: 0;
 }
 
-/* each wave image */
+
 .flow-img {
   position: absolute;
   bottom: 0;
@@ -42,7 +37,7 @@
   max-width: none;
 }
 
-/* order + small offsets to stack correctly */
+
 .flow-yellow {
   z-index: 1;
   transform: translateY(1.5rem);
@@ -58,9 +53,7 @@
   transform: translate(-0.3rem, -0.25rem);
 }
 
-/* ===========================
-   HEADER
-=========================== */
+
 
 .grow-header {
   max-width: 40rem;
@@ -80,9 +73,7 @@
   color: #4b5563;
 }
 
-/* ===========================
-   MAIN GRID
-=========================== */
+
 
 .grow-main {
   display: grid;
@@ -92,9 +83,7 @@
   margin-bottom: 12%;
 }
 
-/* ===========================
-   SIDEBAR
-=========================== */
+
 
 .grow-sidebar {
   display: flex;
@@ -102,7 +91,7 @@
   gap: 0.9rem;
 }
 
-/* search pill */
+
 
 .grow-search-pill {
   display: flex;
@@ -122,7 +111,7 @@
   font-size: 1rem;
 }
 
-/* list items */
+
 
 .grow-item {
   display: flex;
@@ -164,16 +153,14 @@
   box-shadow: 0 0.75rem 2rem rgba(248, 150, 46, 0.25);
 }
 
-/* ===========================
-   RIGHT VISUAL
-=========================== */
+
 
 .grow-visual {
   position: relative;
-  height: 21rem; /* space for the two big windows */
+  height: 21rem; 
 }
 
-/* windows */
+
 
 .window {
   position: absolute;
@@ -184,7 +171,7 @@
   border: 0.25rem solid #ffffff;
 }
 
-/* back window relative to .grow-visual */
+
 .window-back {
   width: 78%;
   height: 95%;
@@ -192,7 +179,7 @@
   top: 4%;
 }
 
-/* front window slightly bigger and lower */
+
 .window-front {
   width: 78%;
   height: 125%;
@@ -200,7 +187,7 @@
   top: 24%;
 }
 
-/* window bar with dots */
+
 
 .window-bar {
   height: 1.9rem;
@@ -230,7 +217,7 @@
   background: #22c55e;
 }
 
-/* images inside windows */
+
 
 .window img {
   width: 100%;
@@ -238,14 +225,14 @@
   object-fit: cover;
 }
 
-/* small overlay image – positioned with % so it never goes outside */
+
 
 .window-small {
   position: absolute;
-  right: 4%;        /* keep some space from the right edge */
-  bottom: 18%;      /* move up relative to window height */
-  width: 32%;       /* relative to front window width */
-  height: 60%;      /* relative to front window height */
+  right: 4%;        
+  bottom: 18%;      
+  width: 32%;      
+  height: 60%;      
   border-radius: 1rem;
   background: #ffffff;
   overflow: hidden;
@@ -258,11 +245,9 @@
   object-fit: cover;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
 
-@media (max-width: 56.25rem) { /* 900px */
+
+@media (max-width: 56.25rem) { 
   .grow-main {
     grid-template-columns: 1fr;
     gap: 1.75rem;
@@ -285,7 +270,7 @@
   }
 }
 
-@media (max-width: 40rem) { /* 640px */
+@media (max-width: 40rem) { 
   .grow-header h2 {
     font-size: 2rem;
   }

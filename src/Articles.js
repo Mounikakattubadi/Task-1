@@ -10,8 +10,7 @@ import art6 from "./images/art6.jpg";
 import art7 from "./images/art7.jpg";
 import art8 from "./images/art8.jpg";
 
-import vector13 from "./images/Vector 13.png"; // background vector for Amazing events
-
+import vector13 from "./images/Vector 13.png"; 
 const articleCards = [
   {
     id: 1,
@@ -69,7 +68,6 @@ const eventCards = [
 const Articles = () => {
   return (
     <section className="articles-section" id="pricing">
-      {/* ARTICLES TOP (white background) */}
       <div className="articles-top">
         <div className="container">
           <div className="articles-header-row">
@@ -96,9 +94,7 @@ const Articles = () => {
         </div>
       </div>
 
-      {/* EVENTS BLOCK (yellow background with vector13 underneath cards) */}
       <div className="events-block">
-        {/* background vector under cards */}
         <div className="events-bg">
           <img src={vector13} alt="" />
         </div>
@@ -129,7 +125,6 @@ const Articles = () => {
         </div>
       </div>
 
-      {/* CTA BOTTOM (dark blue + purple blocks) */}
       <div className="articles-cta">
         <div className="articles-cta-inner container">
           <h2>Collect More Sneakers Today</h2>

@@ -1,13 +1,11 @@
-/* ===========================
-   WHY JOIN US + LOVE SECTION
-=========================== */
+
 
 .why-section {
   background: #fbf5e5;
   padding: 5% 0 80px;
 }
 
-/* white card */
+
 
 .why-card {
   background: #ffffff;
@@ -20,7 +18,6 @@
   margin-bottom: 64px;
 }
 
-/* left text */
 
 .why-text {
   width: 45%;
@@ -60,7 +57,7 @@
   color: #16a34a;
 }
 
-/* button */
+
 
 .why-btn {
   padding: 10px 22px;
@@ -73,7 +70,7 @@
   cursor: pointer;
 }
 
-/* right media & shapes */
+
 
 .why-media {
   position: relative;
@@ -82,13 +79,12 @@
   margin-left: 22%;
 }
 
-/* background shapes */
+
 
 .why-shape {
   position: absolute;
 }
 
-/* large rotated yellow rhombus */
 
 .why-yellow {
   width: 120px;
@@ -100,7 +96,6 @@
   z-index: 0;
 }
 
-/* magenta rounded rectangle on right */
 
 .why-pink {
 width: 180px;
@@ -113,7 +108,7 @@ width: 180px;
   opacity: 75%;
 }
 
-/* blue dot top-right of video */
+
 
 .why-blue-dot {
   width: 42px;
@@ -126,7 +121,7 @@ width: 180px;
   opacity: 70%;
 }
 
-/* green dot bottom-left of video */
+
 
 .why-green-dot {
   width: 65px;
@@ -139,7 +134,7 @@ width: 180px;
   opacity: 50%;
 }
 
-/* video frame */
+
 
 .why-video-frame {
   position: absolute;
@@ -160,7 +155,7 @@ width: 180px;
   object-fit: cover;
 }
 
-/* play button */
+
 
 .why-video-play {
   position: absolute;
@@ -179,15 +174,13 @@ width: 180px;
   justify-content: center;
 }
 
-/* ===========================
-   BECAUSE THEY LOVE US
-=========================== */
+
 
 .love-section {
   margin-top: 8px;
 }
 
-/* header row */
+
 
 .love-header {
   display: flex;
@@ -202,7 +195,7 @@ width: 180px;
   color: #111827;
 }
 
-/* small circular arrows */
+
 
 .love-controls {
   display: flex;
@@ -228,7 +221,7 @@ width: 180px;
   color: #f97316;
 }
 
-/* yellow strip with cards */
+
 
 .love-strip {
   background: #fdd97a;
@@ -238,7 +231,7 @@ width: 180px;
   gap: 18px;
 }
 
-/* individual testimonial cards */
+
 
 .love-card {
   background: #ffffff;
@@ -250,7 +243,7 @@ width: 180px;
   gap: 12px;
 }
 
-/* top logo */
+
 
 .love-card-header {
   display: flex;
@@ -276,7 +269,7 @@ width: 180px;
   font-weight: 500;
 }
 
-/* testimonial text */
+
 
 .love-text {
   font-size: 13px;
@@ -285,7 +278,7 @@ width: 180px;
   margin: 0;
 }
 
-/* person */
+
 
 .love-person {
   display: flex;
@@ -317,7 +310,7 @@ width: 180px;
   color: #6b7280;
 }
 
-/* responsive */
+
 
 @media (max-width: 1024px) {
   .love-strip {

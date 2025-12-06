@@ -1,16 +1,16 @@
 import React from "react";
 import "./Hero.css";
-import shoeImg from "./images/shoe1.png"; // <-- your image
+import shoeImg from "./images/shoe1.png"; 
 import { FiPlay } from "react-icons/fi";
 
 const Hero = () => {
   return (
     <section className="hero-section" id="products">
-      {/* diagonal light-yellow shape */}
+      
       <div className="hero-bg-diagonal" />
 
       <div className="hero container">
-        {/* LEFT TEXT */}
+        
         <div className="hero-text">
           <h1>Collectible Sneakers</h1>
 
@@ -24,15 +24,15 @@ const Hero = () => {
             <button className="hero-btn-outline">Sign up now</button>
 
             <button className="hero-btn-link">
-<span className="hero-play-circle">
-  <FiPlay />
-</span>
+              <span className="hero-play-circle">
+                <FiPlay />
+              </span>
               Watch Demo
             </button>
           </div>
         </div>
 
-        {/* RIGHT IMAGE */}
+        
         <div className="hero-image-container">
           <div className="hero-yellow-square" />
           <img
@@ -43,8 +43,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* FEATURES ROW */}
-      <div className="hero-features container" style={{marginTop:"8%"}}>
+      
+      <div className="hero-features container" style={{ marginTop: "8%" }}>
         <div className="hero-feature">
           <div className="hero-feature-icon blue" />
           <h3>Nibh viverra</h3>

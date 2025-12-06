@@ -44,11 +44,11 @@ const Footer = () => {
             <a href="#">Reports</a>
           </div>
 
-          {/* RIGHT COLUMN */}
+         
           <div className="footer-col footer-col-right">
             <h4>Get the App</h4>
 
-            {/* App Store badge */}
+            
             <button className="store-badge-icon">
               <span className="store-badge-logo">
                 <FaApple />
@@ -59,7 +59,7 @@ const Footer = () => {
               </span>
             </button>
 
-            {/* Google Play badge */}
+            
             <button className="store-badge-icon">
               <span className="store-badge-logo">
                 <SiGoogleplay />

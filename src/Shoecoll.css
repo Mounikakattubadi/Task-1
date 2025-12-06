@@ -1,6 +1,4 @@
-/* ===========================
-   BASE SECTION
-=========================== */
+
 
 .shoe-coll-section {
 position: relative;
@@ -13,7 +11,7 @@ position: relative;
 
 }
 
-/* background map image */
+
 
 .shoe-coll-bg {
   position: absolute;
@@ -33,7 +31,7 @@ position: relative;
   opacity: 0.9;
 }
 
-/* foreground layout */
+
 
 .shoe-coll-inner {
   position: relative;
@@ -44,9 +42,7 @@ position: relative;
   min-height: 22rem;
 }
 
-/* ===========================
-   FLOATING CARD
-=========================== */
+
 
 .shoe-floating-card {
   position: absolute;
@@ -84,9 +80,7 @@ position: relative;
   font-weight: 600;
 }
 
-/* ===========================
-   CENTER STATS
-=========================== */
+
 
 .shoe-stat {
   position: absolute;
@@ -107,9 +101,7 @@ position: relative;
   font-weight: 600;
 }
 
-/* ===========================
-   MAP DOTS
-=========================== */
+
 
 .shoe-dots {
   position: absolute;
@@ -128,7 +120,7 @@ position: relative;
   box-shadow: 0 0 0 0.35rem rgba(181, 255, 59, 0.25);
 }
 
-/* tweak these percentages to match your map image */
+
 
 .dot-1 {
   left: 21%;
@@ -160,9 +152,7 @@ position: relative;
   top: 68%;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+
 
 @media (max-width: 48rem) {
   .shoe-coll-inner {

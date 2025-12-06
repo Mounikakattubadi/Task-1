@@ -6,13 +6,13 @@
   import best3 from "./images/best3.jpg";
 
 const cards = [
-  // 1: left-side pill
+ 
   { id: 1, image: best1, blobs: ["card1-left"] },
 
-  // 2: blue box at top-left corner
+ 
   { id: 2, image: best2, blobs: ["card2-blue-corner"] },
 
-  // 3: green right, purple bottom
+
   { id: 3, image: best3, blobs: ["card3-green-right", "card3-purple-bottom"] },
 ];
 
@@ -28,7 +28,7 @@ const cards = [
           <div className="best-cards">
             {cards.map((card) => (
               <article className="best-card" key={card.id}>
-                {/* Render all blob backgrounds */}
+               
                 {card.blobs.map((blob, index) => (
                   <div key={index} className={`best-card-blob ${blob}`} />
                 ))}

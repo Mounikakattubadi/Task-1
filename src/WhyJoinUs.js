@@ -54,7 +54,7 @@ const WhyJoinUs = () => {
   return (
     <section className="why-section">
       <div className="why container">
-        {/* top white card */}
+       
         <div className="why-card">
           <div className="why-text">
             <h2>Why join us</h2>
@@ -83,7 +83,7 @@ const WhyJoinUs = () => {
           </div>
         </div>
 
-        {/* Because they love us */}
+        
         <div className="love-section">
           <div className="love-header">
             <h2>Because they love us</h2>
