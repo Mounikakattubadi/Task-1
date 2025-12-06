@@ -1,0 +1,189 @@
+.hero-section {
+  background: #fbf5e5;
+  position: relative;
+  padding: 72px 0 120px; /* space under navbar + bottom */
+  overflow: hidden;
+}
+
+/* BIG diagonal wedge in top-right (like Figma) */
+.hero-bg-diagonal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;          /* controls how wide the yellow area is */
+  height: 185px;       /* how far it goes down into the hero */
+  background: #f7e4b0;
+  /* triangle that starts ~middle of the top and goes to bottom-right */
+  clip-path: polygon(40% 0, 100% 0, 100% 100%);
+  z-index: 0;
+}
+
+/* main hero layout */
+.hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT SIDE TEXT */
+.hero-text {
+  width: 48%;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #051124;
+  margin-bottom: 18px;
+}
+
+.hero-subtext {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b5563;
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* buttons */
+.hero-btn-outline {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 3px solid #8a4b14;
+  background: transparent;
+  color: #8a4b14;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-btn-link {
+  border: none;
+  background: none;
+  color: #8a4b14;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hero-play-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid #8a4b14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;  /* icon size */
+  color: #8a4b14;   /* icon color */
+}
+
+
+/* RIGHT SIDE IMAGE / YELLOW SQUARE */
+.hero-image-container {
+  width: 48%;
+  position: relative;
+  height: 310px;
+}
+
+.hero-yellow-square {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  width: 320px;
+  height: 260px;
+  border-radius: 40px;
+  background: #ffb820;
+  z-index: 1;
+}
+
+.hero-shoe-img {
+  position: absolute;
+  right: -48px;
+  top: -230px;
+  width: 500px;
+  height: auto;
+  transform: rotate(-0deg);
+  z-index: 2;
+}
+
+/* FEATURES UNDER HERO */
+.hero-features {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 56px;
+}
+
+/* FEATURE ICONS */
+.hero-feature-icon {
+  margin-bottom: 16px;
+}
+
+.hero-feature-icon.blue {
+  width: 64px;
+  height: 44px;
+  background: #8fbcd0;
+  clip-path: polygon(50% 100%, 100% 40%, 85% 5%, 15% 5%, 0 40%);
+  border-radius: 20px;
+  filter: blur(0.4px);   /* softens edges like Figma */
+}
+
+.hero-feature-icon.green {
+  width: 52px;
+  height: 70px;
+  background: #97d5a3;
+
+  /* This recreates the angled-round blob */
+  border-radius: 45% 60% 55% 40% / 55% 65% 45% 40%;
+
+  transform: rotate(-35deg); /* perfect angle from your image */
+}
+
+
+.hero-feature-icon.purple {
+  width: 40px;
+  height: 40px;
+  background: #d48bd6;
+  border-radius: 35%;
+}
+
+
+.hero-feature h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.hero-feature p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* simple responsive for smaller screens */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-text,
+  .hero-image-container {
+    width: 100%;
+  }
+
+  .hero-features {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,61 @@
+/* NAVBAR WRAPPER */
+.nav-wrapper {
+  position: relative;
+  background: #fbf5e5;
+  height: 90px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+
+.nav-diagonal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 91vw;            /* was 85vw → now smaller */
+  height: 260px;          /* slightly reduced so it doesn't overpower */
+  background: #f7e4b0;
+  clip-path: polygon(55% 0, 100% 0, 100% 100%);
+  z-index: 0;
+}
+
+/* INNER NAV */
+.nav-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.nav-logo {
+  font-weight: 700;
+  font-size: 22px;
+  color: #7b3a0b;
+}
+
+/* MENU */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 14px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #7b3a0b;
+}
+
+/* CTA BUTTON */
+.nav-cta {
+  padding: 8px 22px;
+  border-radius: 5%;
+  border: 3px solid #7b3a0b;
+  background: #fdf2d6;
+  color: #7b3a0b;
+  font-weight: 500;
+  cursor: pointer;
+}
